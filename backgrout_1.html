@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            div{
-                border :5px solid gray;
-                background-color: azure;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            Hello world
-        </div>
-    </body>
+
+<head>
+    <style>
+        div {
+            /* 축약형 */
+            /* background: tomato url(); */
+            border: 5px solid gray;
+            height: 600px;
+            background-color: tomato;
+            background-image: url('image.jfif');
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-y; */
+            background-attachment: fixed;
+            /* background-size: 500px 100px; */
+            /* background-size: contain; */
+            /* cover 과 contain의 차이점은cover은 흘려너침 contain은 다채워넣음(여백) */
+            background-position: right top;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hello world
+    </div>
+</body>
+
 </html>
