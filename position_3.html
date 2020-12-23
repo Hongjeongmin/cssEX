@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            padding: 30px;
+        }
+        #parent,
+        #other {
+            border: 5px solid tomato;
+        }
+        #large{
+            height: 10000px;
+            background-color: tomato;
+        }
+        /* fixed 고정된 상태 스크롤 내려도 고정된다. */
+        #me {
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<!--absolute는 static이 아닌 부모가 나올때까지 올라가는 것.-->
+
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>
+</body>
+
+</html>

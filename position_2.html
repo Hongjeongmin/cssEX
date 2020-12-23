@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #parent,
+        #other,
+        #grand {
+            border: 5px solid tomato;
+        }
+
+        #grand {
+            position: relative;
+        }
+
+        #me {
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+<!--absolute는 static이 아닌 부모가 나올때까지 올라가는 것.-->
+<body>
+    <div id="other">other</div>
+    <div id="grand">
+        grand
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </div>
+</body>
+
+</html>
